@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import user from "../images/user.png";
+import { useContactsCrud } from "../context/ContactsCrudContext";
 
-const DeletePage = (props) => {
-    const {id} = props.location.state;
-    console.log(props.location.state);
+const DeletePage = () => {
+    const {id} = useParams();
+    const {removeContactHandler} = useContactsCrud();
+    // const {id} = props.location.state;
+    // console.log(props.location.state);
     
     return(
         <div className="main">
@@ -23,7 +26,7 @@ const DeletePage = (props) => {
                     </button>
                 </Link>
                 <Link to="/">     
-                    <button className="ui button red " onClick={() => props.handleDelete(id)}>
+                    <button className="ui button red " onClick={() => removeContactHandler(id)}>
                         Yes
                     </button>
                 </Link>
