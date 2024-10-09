@@ -5,11 +5,8 @@ import user from "../images/user.jpg";
 
 const ContactDetail = (props) => {
     const {id} = useParams();
-    const { contacts } = useContactsCrud();
-    //const {name, email} = props.location.state.contact;
-    
-    const {name, email} = contacts.find(contact => contact.id === id);
-     
+    const { contacts } = useContactsCrud();    
+    const {name, email} = contacts.find(contact => contact.id === id);     
 
     return(
         <div className="main">

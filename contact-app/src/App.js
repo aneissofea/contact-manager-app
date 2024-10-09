@@ -1,7 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {v4 as uuid} from 'uuid';
-import api from './api/contacts';
 import './App.css';
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
@@ -12,8 +10,6 @@ import EditContact from './components/EditContact';
 import { ContactsCrudContextProvider } from './context/ContactsCrudContext';
 
 function App() {
-
-  const LOCAL_STORAGE_KEY = "contacts";
 
   return (
       <div className="ui container">
