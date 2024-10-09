@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aneissofea/contact-manager-app/static/css/main.dc4d6ff2.css",
+    "main.js": "/aneissofea/contact-manager-app/static/js/main.941fbcc9.js",
+    "static/media/user.png": "/aneissofea/contact-manager-app/static/media/user.2ffee28a30387fc9fe84.png",
+    "static/media/user.jpg": "/aneissofea/contact-manager-app/static/media/user.72039a5e25d78ef68695.jpg",
+    "index.html": "/aneissofea/contact-manager-app/index.html",
+    "main.dc4d6ff2.css.map": "/aneissofea/contact-manager-app/static/css/main.dc4d6ff2.css.map",
+    "main.941fbcc9.js.map": "/aneissofea/contact-manager-app/static/js/main.941fbcc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4d6ff2.css",
+    "static/js/main.941fbcc9.js"
+  ]
+}
