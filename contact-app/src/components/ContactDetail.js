@@ -1,10 +1,16 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useContactsCrud } from "../context/ContactsCrudContext";
 import user from "../images/user.jpg";
 
 const ContactDetail = (props) => {
-    const location = useLocation();
-    const {name, email} = props.location.state.contact;
+    const {id} = useParams();
+    const { contacts } = useContactsCrud();
+    //const {name, email} = props.location.state.contact;
+    
+    const {name, email} = contacts.find(contact => contact.id === id);
+     
+
     return(
         <div className="main">
             <div className="ui card centered">
