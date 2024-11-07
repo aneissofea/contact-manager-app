@@ -6,6 +6,8 @@ import { useContactsCrud } from "../context/ContactsCrudContext";
 const DeletePage = () => {
     const {id} = useParams();
     const {removeContactHandler} = useContactsCrud();
+    // const {id} = props.location.state;
+    // console.log(props.location.state);
     
     return(
         <div className="main">

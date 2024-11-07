@@ -21,7 +21,8 @@ const EditContact = () => {
         updateContactHandler({id, name:newName, email:newEmail});
         setNewName("");
         setNewEmail("");
-        navigate("/");     //for the button to go back to contact list (/) page upon clicking
+        //for the button to go back to contact list (/) page upon clicking
+        navigate("/");        
     };
 
         return (

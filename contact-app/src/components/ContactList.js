@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useRef, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { useContactsCrud } from "../context/ContactsCrudContext";
 import ContactCard from "./ContactCard";
